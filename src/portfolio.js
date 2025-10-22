@@ -7,20 +7,20 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Miftaul Mannan",
-  logo_name: "Miftaul Mannan",
+  title: "Anna Chen",
+  logo_name: "Anna Chen",
   nickname: null,
   subTitle:
-    "An aspiring developer who loves to take on new projects that challenges his analytical and technological capacities.",
+    "An aspiring developer who loves to take on new projects that challenges her analytical and technological capacities.",
   resumeLink:
     "https://drive.google.com/file/d/1ecfeM8pNH7aLELi5EINHrX8-jY5Uqb0q/view?usp=sharing",
-  portfolio_repository: "https://github.com/Tasin5541",
+  portfolio_repository: "https://github.com/anxchen",
 };
 
 const socialMediaLinks = [
   {
     name: "Github",
-    link: "https://github.com/Tasin5541",
+    link: "https://github.com/anxchen",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
