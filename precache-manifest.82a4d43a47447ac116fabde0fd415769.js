@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d039fcff7f6d319bca20bcf9adcec47",
+    "revision": "1b452271bdd90fd53b501ff5f0d759df",
     "url": "/anxchen/GenesisDemoWebsite/index.html"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/anxchen/GenesisDemoWebsite/static/css/main.44c52220.chunk.css"
   },
   {
-    "revision": "b7007b6701afbdc04eaa",
-    "url": "/anxchen/GenesisDemoWebsite/static/js/2.5178c401.chunk.js"
+    "revision": "3abf62565d703ba5235d",
+    "url": "/anxchen/GenesisDemoWebsite/static/js/2.8bf6bc90.chunk.js"
   },
   {
     "revision": "eaaf63558baae456918a991a401208d7",
-    "url": "/anxchen/GenesisDemoWebsite/static/js/2.5178c401.chunk.js.LICENSE.txt"
+    "url": "/anxchen/GenesisDemoWebsite/static/js/2.8bf6bc90.chunk.js.LICENSE.txt"
   },
   {
     "revision": "0e46a8f262c6c9b6bc90",
