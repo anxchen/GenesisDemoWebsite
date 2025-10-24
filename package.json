@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "AnnaChen",
-  "homepage": "https://github.com/anxchen/GenesisDemoWebsite",
+  "homepage": "https://anxchen.github.io/GenesisDemoWebsite/",
   "version": "0.1.0",
   "scripts": {
     "build": "react-scripts build",
