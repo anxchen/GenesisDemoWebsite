@@ -1,85 +1,128 @@
-.skills-main-div {
-  display: flex;
-  overflow: hidden;
+.what-we-do-section {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 140px 24px 0;
 }
 
-.skills-header {
-  font-size: 60px;
-  line-height: normal;
-  font-family: "Google Sans Regular";
+.what-we-do-heading {
+  margin: 0 auto 72px;
+  text-align: center;
+  font-size: clamp(42px, 6vw, 56px);
+  font-family: "Google Sans Bold";
+}
+
+.what-we-do-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 96px;
+}
+
+.what-we-do-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.what-we-do-illustration svg {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+
+.what-we-do-text {
+  flex: 1;
+  max-width: 520px;
+}
+
+.what-we-do-title {
+  margin: 0;
+}
+
+.what-we-do-description {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.what-we-do-list {
+  margin-top: 32px;
+  padding-left: 20px;
+  display: grid;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.what-we-do-list-item {
+  list-style: disc;
+}
+
+.what-we-do-socials {
+  margin-top: 144px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 12px;
   text-align: center;
 }
 
-.skills-text {
-  font-size: 20px;
+.what-we-do-socials p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Google Sans Medium";
 }
 
-.skills-text-div {
-  margin-left: 50px;
-  font-family: "Google Sans Regular";
+.what-we-do-socials-links {
+  display: flex;
+  justify-content: center;
 }
 
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
+@media (max-width: 992px) {
+  .what-we-do-section {
+    padding: 120px 20px 0;
+  }
 
-.skills-image-div > * {
-  max-width: 100%;
-  height: auto;
-  margin-top: 100px;
-}
+  .what-we-do-heading {
+    margin-bottom: 56px;
+  }
 
-.skills-heading {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Regular";
-  line-height: normal;
-}
-
-/* Media Query */
-@media (max-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
-  }
-  .skills-header {
-    font-size: 50px;
-  }
-  /* .skills-image-div > img {
-    margin-top: 0px;
-  } */
-}
-@media (max-width: 768px) {
-  .skills-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-  .skills-header {
-    font-size: 30px;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
+  .what-we-do-inner {
     flex-direction: column;
-  }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
-  .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
+    align-items: center;
     text-align: center;
+    gap: 64px;
   }
-  .skills-image-div {
-    /* display: none; */
-    order: 2;
+
+  .what-we-do-text {
+    max-width: 640px;
   }
-  .skills-image-div > * {
-    margin-top: 0px;
+
+  .what-we-do-list {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .what-we-do-socials {
+    margin-top: 112px;
+  }
+}
+
+@media (max-width: 600px) {
+  .what-we-do-section {
+    padding: 96px 16px 0;
+  }
+
+  .what-we-do-socials {
+    margin-top: 80px;
+    padding: 24px;
+  }
+
+  .what-we-do-list {
+    gap: 12px;
+    font-size: 16px;
   }
 }

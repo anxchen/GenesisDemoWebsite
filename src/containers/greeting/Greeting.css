@@ -5,100 +5,105 @@
   margin-top: 4rem;
 }
 .greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
-
-.gretting-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 100px 24px 72px;
 }
 
 .greeting-main {
   display: flex;
+  justify-content: center;
 }
 
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+.greeting-content {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
 }
-.button-greeting-div {
+
+.greeting-header {
   display: flex;
-  margin-top: 20px;
-}
-.button-greeting-div > * {
-  margin-right: 0.5rem;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.greeting-text {
-  margin-top: 80px;
-  font-size: 70px;
-  line-height: 1.1;
+.greeting-title {
+  margin: 0;
+  font-size: clamp(48px, 9vw, 80px);
+  line-height: 1.05;
   font-family: "Google Sans Bold";
 }
 
-.greeting-nickname {
-  font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
-}
-
-.greeting-text-p {
-  font-size: 40px;
-  line-height: 40px;
-  margin-right: 40px;
+.greeting-tagline {
+  margin: 0;
+  font-size: clamp(20px, 3.4vw, 28px);
+  line-height: 1.3;
   font-family: "Google Sans Medium";
+  white-space: nowrap;
 }
 
-.greeting-image-div > * {
-  max-width: 100%;
-  height: auto;
+.greeting-description {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+.greeting-statement {
+  margin-top: 32px;
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.greeting-cta-button {
+  margin-right: 0;
 }
 
 /* Media Query */
-@media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
+@media (max-width: 900px) {
+  .greet-main {
+    padding: 100px 20px 64px;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    margin-top: 0px;
-    text-align: center;
-  }
-  .greeting-nickname {
-    font-size: 25px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
-  }
   .greeting-main {
-    display: block;
-  }
-
-  .button-greeting-div{
-    flex-direction: column;
-    align-items:center;
-    margin-right: 0;
-  }
-
-  .portfolio-repo-btn-div {
-    width: 100%;
-    display: flex;
     justify-content: center;
+  }
+
+  .greet-main {
+    padding: 80px 20px 56px;
+  }
+
+  .greeting-content {
+    text-align: center;
+  }
+
+  .greeting-header {
+    justify-content: center;
+  }
+
+  .greeting-tagline {
+    white-space: normal;
+  }
+
+  .greeting-description {
+    margin: 24px auto 0;
+  }
+
+  .greeting-statement {
+    margin-top: 28px;
+  }
+
+  .button-greeting-div {
+    justify-content: center;
+    margin-top: 32px;
   }
 }

@@ -1,12 +1,8 @@
 import React, { Component } from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, HashRouter, Redirect } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
-import Skill from "../pages/skill/skillTree";
-import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/Experience";
-import Opensource from "../pages/opensource/Opensource";
-import Contact from "../pages/contact/ContactComponent";
-import Projects from "../pages/projects/Projects";
+import About from "../pages/about/About";
+import SignUp from "../pages/signup/SignUp";
 
 export default class Main extends Component {
   render() {
@@ -17,51 +13,18 @@ export default class Main extends Component {
       <div>
         <HashRouter basename="/">
           <Switch>
+            <Redirect exact from="/" to="/features" />
             <Route
-              path="/"
-              exact
+              path="/features"
               render={(props) => <Home {...props} theme={this.props.theme} />}
             />
             <Route
-              path="/home"
-              render={(props) => <Home {...props} theme={this.props.theme} />}
+              path="/about"
+              render={(props) => <About {...props} theme={this.props.theme} />}
             />
             <Route
-              path="/skill"
-              render={(props) => (
-                <Skill {...props} theme={this.props.theme} />
-              )}
-            />
-            <Route
-              path="/experience"
-              exact
-              render={(props) => (
-                <Experience {...props} theme={this.props.theme} />
-              )}
-            />
-            <Route
-              path="/education"
-              render={(props) => (
-                <Education {...props} theme={this.props.theme} />
-              )}
-            />
-            <Route
-              path="/opensource"
-              render={(props) => (
-                <Opensource {...props} theme={this.props.theme} />
-              )}
-            />
-            <Route
-              path="/contact"
-              render={(props) => (
-                <Contact {...props} theme={this.props.theme} />
-              )}
-            />
-            <Route
-              path="/projects"
-              render={(props) => (
-                <Projects {...props} theme={this.props.theme} />
-              )}
+              path="/signup"
+              render={(props) => <SignUp {...props} theme={this.props.theme} />}
             />
           </Switch>
         </HashRouter>

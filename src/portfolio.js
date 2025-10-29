@@ -7,18 +7,55 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Anna Chen",
-  logo_name: "Anna Chen",
+  title: "Genesis",
+  logo_name: "Genesis",
   nickname: null,
-  subTitle:
-    "An aspiring developer who loves to take on new projects that challenges her analytical and technological capacities.",
+  tagline: "No editing. No bottleneck. Just Storytelling.",
+  description:
+    "The storytelling studio for ,everyday historians transforming raw footage and oral stories into structured long-form narratives.",
+  ctaText: "Sign up",
+  ctaLink: "#/signup",
   resumeLink:
     "https://drive.google.com/file/d/1ecfeM8pNH7aLELi5EINHrX8-jY5Uqb0q/view?usp=sharing",
   portfolio_repository: "https://github.com/anxchen",
 };
 
+const whatWeDo = {
+  heading: "What we do?",
+  title: "Bridge the storyteller to editor divide.",
+  bullets: [
+    "editing a video can be as easy as leaving comments on a YouTube video",
+    "cross collaboration with family and friends",
+    "natural story beats and ai-narrative guidance",
+    "easily share family documentaries, personal milestones, and stories throughout the years",
+  ],
+  socialsBanner: {
+    message: "Follow our socials for the latest news.",
+  },
+};
+
+const about = {
+  title: "About Genesis",
+  description:
+    "Genesis removes the bottlenecks that keep everyday historians from turning raw footage into lasting narratives. We pair intuitive collaboration tools with guidance that keeps stories moving forward.",
+  highlights: [
+    "We believe editing should feel like a conversation, not a hand-off to another team.",
+    "AI-assisted story beats surface structure so families can focus on the memories that matter most.",
+    "Our secure sharing options make it easy to premiere milestone films with the people who were there.",
+  ],
+};
+
+const signUpContent = {
+  title: "Sign up for early access",
+  subtitle:
+    "We're welcoming a limited group of storytellers to help shape Genesis. Share your email and we'll reach out with next steps.",
+  emailPlaceholder: "you@example.com",
+  buttonText: "Join the waitlist",
+  successMessage: "Thanks for signing up! We'll be in touch soon.",
+};
+
 const socialMediaLinks = [
-  {
+  /*{
     name: "Github",
     link: "https://github.com/anxchen",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
@@ -29,13 +66,6 @@ const socialMediaLinks = [
     link: "https://www.linkedin.com/in/miftaul-mannan-tasin-566543107/",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
-  },
-  {
-    name: "YouTube",
-    link:
-      "https://www.youtube.com/channel/UClvrUclYSGX_MZPOF6ySG6A?view_as=subscriber",
-    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   },
   {
     name: "Gmail",
@@ -50,11 +80,25 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
     backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   },
+  */
   {
-    name: "Instagram",
+    name: "YouTube",
+    link:
+      "https://www.youtube.com/channel/UClvrUclYSGX_MZPOF6ySG6A?view_as=subscriber",
+    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
+    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/miftaul-mannan-tasin-566543107/",
+    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+  },
+  {
+    name: "X",
     link: "https://www.instagram.com/mm_tasin/",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+    fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands
+    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
   },
 ];
 
@@ -580,6 +624,9 @@ const contactPageData = {
 export {
   settings,
   greeting,
+  whatWeDo,
+  about,
+  signUpContent,
   socialMediaLinks,
   skills,
   techStack,

@@ -29,6 +29,13 @@
   color: #868e96;
 }
 
+.secondary-heading {
+  font-size: clamp(24px, 4vw, 32px);
+  line-height: 1.3;
+  font-family: "Google Sans Medium";
+  font-weight: 500;
+}
+
 /* Animations */
 @keyframes fade_down {
   0% {
