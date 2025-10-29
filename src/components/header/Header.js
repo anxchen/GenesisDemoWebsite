@@ -3,6 +3,8 @@ import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
+import lightLogo from "../../assests/images/BlueLight_GenesisLogo.png";
+import darkLogo from "../../assests/images/BlueDark_GenesisLogo.png";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -19,11 +21,13 @@ class Header extends Component {
     const theme = this.props.theme;
     console.log(theme);
     const link = settings.isSplash ? "/splash" : "/features";
+    const logoSrc = theme.isDark ? darkLogo : lightLogo;
     return (
       <Fade top duration={1000} distance="20px">
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
+              <img src={logoSrc} alt="Genesis logo" className="logo-mark" />
               <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}

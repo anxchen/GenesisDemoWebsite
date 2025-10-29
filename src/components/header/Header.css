@@ -31,18 +31,29 @@
 }
 
 .header .logo {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
+  margin-top: 8px;
+  line-height: 1;
 }
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 6px;
   /* color: #55198b; */
+}
+.logo-mark {
+  width: 44px;
+  height: 44px;
+  display: block;
+  object-fit: contain;
+}
+.header .logo span {
+  line-height: 1;
 }
 
 /* menu */

@@ -2,6 +2,7 @@
 export const blueTheme = {
   body: "#EDF9FE",
   text: "#001C55",
+  isDark: false,
   iconbg: "#001C55",
   repobody: "#A6E1FA",
   repotext: "#001C55",
@@ -14,13 +15,14 @@ export const blueTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#0A2472",
   headerColor: "#0E6BA877",
-  toggleBorder: '#FFF',
-  gradient: 'linear-gradient(#39598A, #79D7ED)',
+  toggleBorder: "#FFF",
+  gradient: "linear-gradient(#39598A, #79D7ED)",
 };
 
 export const brownTheme = {
   body: "#FFFEFD",
   text: "#5D2A42",
+  isDark: false,
   highlight: "#FFF9EC",
   dark: "#00072D",
   secondaryText: "#8D697A",
@@ -33,6 +35,7 @@ export const brownTheme = {
 export const purpleTheme = {
   body: "#F8EFF4",
   text: "#231942",
+  isDark: false,
   highlight: "#E0B1CB",
   dark: "#00072D",
   secondaryText: "#655E7A",
@@ -45,6 +48,7 @@ export const purpleTheme = {
 export const yelGreenTheme = {
   body: "#FFFFEB",
   text: "#003F2F",
+  isDark: false,
   highlight: "#dddf00",
   dark: "#00072D",
   secondaryText: "#4CA58F",
@@ -57,6 +61,7 @@ export const yelGreenTheme = {
 export const redTheme = {
   body: "#FFF8E6",
   text: "#6a040f",
+  isDark: false,
   highlight: "#ffba08",
   dark: "#03071e",
   secondaryText: "#964F56",
@@ -69,6 +74,7 @@ export const redTheme = {
 export const blackTheme = {
   body: "#E5E5E5",
   text: "#14213d",
+  isDark: false,
   highlight: "#ffffff",
   dark: "#000000",
   secondaryText: "#5A6377",
@@ -81,6 +87,7 @@ export const blackTheme = {
 export const pinkTheme = {
   body: "#FEE9F2",
   text: "#620E34",
+  isDark: false,
   highlight: "#FBA7CD",
   dark: "#31071A",
   secondaryText: "#ef476f",
@@ -93,6 +100,7 @@ export const pinkTheme = {
 export const violetTheme = {
   body: "#F4EEFC",
   text: "#430A58",
+  isDark: false,
   highlight: "#D6BEF4",
   dark: "#21052C",
   secondaryText: "#875599",
@@ -105,6 +113,7 @@ export const violetTheme = {
 export const greenTheme = {
   body: "#E6FAF5",
   text: "#084c61",
+  isDark: false,
   highlight: "#9BEED8",
   dark: "#031E26",
   secondaryText: "#528190",
@@ -117,6 +126,7 @@ export const greenTheme = {
 export const orangeTheme = {
   body: "#FFF0EA",
   text: "#99401F",
+  isDark: false,
   highlight: "#FFB59A",
   dark: "#33150A",
   secondaryText: "#CC552A",
@@ -129,6 +139,7 @@ export const orangeTheme = {
 export const darkTheme = {
   body: "#202124",
   text: "#ffffff",
+  isDark: true,
   iconbg: "#001C55",
   repobody: "#ffffff",
   repotext: "#000000",
@@ -141,8 +152,8 @@ export const darkTheme = {
   compImgHighlight: "#E6E6E6",
   jacketColor: "#0A2472",
   headerColor: "#0E6BA877",
-  toggleBorder: '#6B8096',
-  gradient: 'linear-gradient(#091236, #1E215D)',
+  toggleBorder: "#6B8096",
+  gradient: "linear-gradient(#091236, #1E215D)",
 };
 
 export const chosenTheme = blueTheme;
