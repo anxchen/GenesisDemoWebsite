@@ -2,7 +2,7 @@
   "private": true,
   "name": "AnnaChen",
   "version": "0.1.0",
-  "homepage": "https://anxchen.github.io/GenesisDemoWebsite/",
+  "homepage": "https://campcambrian.com",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
