@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.css";
-import { socialMediaLinks } from "../../portfolio";
+import { socialMediaLinks } from "../../landing";
 import styled from "styled-components";
 
 const IconWrapper = styled.span`
@@ -19,10 +19,13 @@ export default function socialMedia(props) {
       {socialMediaLinks.map((media) => {
         return (
           <a
+            key={media.name}
             href={media.link}
             className={`icon-button`}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={media.name}
+            title={media.name}
           >
             <IconWrapper {...media} {...props}>
               <i className={`fa-brands ${media.fontAwesomeIcon}`}></i>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Achievement.css";
 import AchivementCard from "../../components/achievementCard/AchivementCard";
-import { achievementSection } from "../../portfolio";
+import { achievementSection } from "../../landing";
 
 export default function Achievement() {
   // function openUrlInNewTab(url) {

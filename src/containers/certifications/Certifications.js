@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Certifications.css";
 import { Fade } from "react-reveal";
-import { certifications } from "../../portfolio";
+import { certifications } from "../../landing";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 
 class Certifications extends Component {

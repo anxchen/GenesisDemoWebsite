@@ -1,7 +1,7 @@
 import React from "react";
 import "./Greeting.css";
 import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
+import { greeting } from "../../landing";
 import { Fade } from "react-reveal";
 
 export default function Greeting(props) {

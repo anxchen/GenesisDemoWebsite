@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import { greeting, settings } from "../../portfolio.js";
+import { greeting } from "../../landing.js";
 import lightLogo from "../../assests/images/BlueLight_GenesisLogo.png";
 import darkLogo from "../../assests/images/BlueDark_GenesisLogo.png";
 
@@ -20,7 +20,7 @@ class Header extends Component {
   render() {
     const theme = this.props.theme;
     console.log(theme);
-    const link = settings.isSplash ? "/splash" : "/features";
+    const link = "/";
     const logoSrc = theme.isDark ? darkLogo : lightLogo;
     return (
       <Fade top duration={1000} distance="20px">
@@ -39,6 +39,19 @@ class Header extends Component {
               <span className="navicon"></span>
             </label>
             <ul className="menu" style={{ backgroundColor: theme.body }}>
+              <li>
+                <NavLink
+                  exact
+                  to="/"
+                  tag={Link}
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                  onMouseOut={(event) => onMouseOut(event)}
+                >
+                  Home
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   to="/features"
@@ -60,7 +73,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  About
+                  About us
                 </NavLink>
               </li>
               <li>
@@ -72,7 +85,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Sign Up
+                  Sign up
                 </NavLink>
               </li>
             </ul>

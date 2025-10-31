@@ -8,7 +8,12 @@
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 100px 24px 72px;
+  padding: 160px 24px 160px;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .greeting-main {
@@ -69,7 +74,8 @@
 /* Media Query */
 @media (max-width: 900px) {
   .greet-main {
-    padding: 100px 20px 64px;
+    padding: 140px 20px 120px;
+    min-height: calc(100vh - 100px);
   }
 }
 
@@ -79,7 +85,8 @@
   }
 
   .greet-main {
-    padding: 80px 20px 56px;
+    padding: 120px 20px 96px;
+    min-height: calc(100vh - 96px);
   }
 
   .greeting-content {

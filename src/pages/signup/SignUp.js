@@ -3,7 +3,7 @@ import "./SignUp.css";
 import Header from "../../components/header/Header";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { signUpContent } from "../../portfolio";
+import { signUpContent } from "../../landing";
 
 class SignUp extends Component {
   constructor(props) {
@@ -31,6 +31,11 @@ class SignUp extends Component {
   render() {
     const theme = this.props.theme;
     const { email, submitted } = this.state;
+    const subtitleLines =
+      Array.isArray(signUpContent.subtitleLines) &&
+      signUpContent.subtitleLines.length > 0
+        ? signUpContent.subtitleLines
+        : [signUpContent.subtitle].filter(Boolean);
 
     return (
       <div>
@@ -46,7 +51,12 @@ class SignUp extends Component {
               className="signup-subtitle"
               style={{ color: theme.secondaryText }}
             >
-              {signUpContent.subtitle}
+              {subtitleLines.map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  {index < subtitleLines.length - 1 ? <br /> : null}
+                </React.Fragment>
+              ))}
             </p>
           </Fade>
           <Fade bottom duration={2000} distance="20px" delay={200}>

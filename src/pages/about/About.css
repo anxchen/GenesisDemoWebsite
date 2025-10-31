@@ -1,10 +1,10 @@
 .about-main {
-  padding: 8rem 1.5rem 4rem;
-  max-width: 900px;
+  padding: 6rem 1.5rem 5rem;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .about-title {
@@ -12,34 +12,166 @@
   margin: 0;
 }
 
-.about-description {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  margin: 0;
-}
-
-.about-highlights {
+.about-intro {
   display: grid;
   gap: 1.5rem;
 }
 
-.about-highlight-card {
-  padding: 1.5rem 1.75rem;
-  border-radius: 12px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.about-intro-paragraph {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.8;
 }
 
-.about-highlight-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+.about-manifesto {
+  padding: 2rem 2rem 2rem 0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-manifesto-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+}
+
+.about-manifesto-text {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-video-section {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 3rem;
+}
+
+.about-video-intro {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 28ch;
+}
+
+.about-video-link {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.about-video-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-video-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 360px;
+}
+
+.about-channel-name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.about-subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 12px;
+  background: #d92525;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.about-subscribe-button:hover,
+.about-subscribe-button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(226, 82, 82, 0.35);
+}
+
+.about-subscribe-icon {
+  display: block;
+}
+
+.about-video-frame {
+  flex: 1;
+}
+
+.about-video-frame iframe,
+.about-video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 18px;
+}
+
+.about-video-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dcdcdc, #f1f1f1);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-video-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.about-video-play-icon {
+  position: relative;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 1;
+}
+
+.about-video-play-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 24px solid #e25252;
 }
 
 @media screen and (min-width: 768px) {
   .about-main {
-    padding-top: 9rem;
+    padding: 7.5rem 2.5rem 6rem;
   }
 
   .about-title {
     font-size: 3.5rem;
+  }
+
+  .about-video-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-video-details {
+    max-width: 420px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-main {
+    padding-top: 6rem;
   }
 }

@@ -4,10 +4,15 @@ import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
+
+const projectsContent = {
+  title: "Storytelling in Action",
+  description:
+    "We're refreshing this space with collaborative storytelling showcases. Explore recent experiments below while we prepare new highlights.",
+};
 
 class Projects extends Component {
   render() {
@@ -19,10 +24,6 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <ProjectsImg theme={theme} />
               </div>
               <div className="projects-heading-text-div">
@@ -30,13 +31,13 @@ class Projects extends Component {
                   className="projects-heading-text"
                   style={{ color: theme.text }}
                 >
-                  {projectsHeader.title}
+                  {projectsContent.title}
                 </h1>
                 <p
                   className="projects-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {projectsHeader["description"]}
+                  {projectsContent.description}
                 </p>
               </div>
             </div>
